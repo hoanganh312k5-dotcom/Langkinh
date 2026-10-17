@@ -1,0 +1,14 @@
+# Chuyển mọi URL "đẹp" (không phải file/thư mục thật) về index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Không cho thực thi PHP trong thư mục upload (chống up file độc hại)
+<IfModule mod_rewrite.c>
+    RewriteRule ^uploads/.*\.(php|phtml|phar)$ - [F,L]
+</IfModule>
+
+Options -Indexes

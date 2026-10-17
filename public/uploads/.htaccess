@@ -1,0 +1,5 @@
+# Thư mục chứa ảnh người dùng upload: tuyệt đối không chạy script
+<FilesMatch "\.(php|phtml|phar|php[0-9])$">
+    Require all denied
+</FilesMatch>
+Options -Indexes

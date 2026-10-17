@@ -1,0 +1,6 @@
+app/config/config.local.php
+public/uploads/products/*.jpg
+public/uploads/products/*.png
+public/uploads/products/*.webp
+.DS_Store
+Thumbs.db

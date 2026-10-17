@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "cweijan.vscode-mysql-client2",
+    "xdebug.php-debug"
+  ]
+}
